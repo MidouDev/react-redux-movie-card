@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-import { Card } from "./Card";
+import { Cards } from "./Cards";
 
 export default class PopularMovies extends Component {
   url = "https://api.themoviedb.org/3/movie/popular?api_key=";
+  query = "";
 
   componentDidMount() {
-    this.props.loadMovies(this.url);
+    this.props.loadMovies(this.url, this.query);
   }
+
   render() {
     return (
       <div className="mt-3">
         <div className="container d-flex flex-wrap justify-content-around">
-          <Card movieList={this.props.popularMovies} />
+          <Cards movieList={this.props.popularMovies} />
         </div>
       </div>
     );
