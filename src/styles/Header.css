@@ -1,9 +1,19 @@
 .navlink {
-  color: black;
+  color: white;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.active{
-  color: blueviolet
+.navlink:hover {
+  color: #9e788f;
+  text-decoration: none;
+}
+
+.active {
+  color: #99a9db;
+  text-decoration: underline;
+}
+
+.navbar-toggler:hover {
+  background-color: #e1e5ee;
 }

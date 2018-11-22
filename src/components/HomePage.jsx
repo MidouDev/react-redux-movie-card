@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/HomePage.css";
 
 export const HomePage = () => (
   <div className="jumbotron m-2">
@@ -26,7 +27,7 @@ export const HomePage = () => (
     </div>
     <p className="lead">
       <a
-        className="btn btn-danger btn-lg"
+        className="btn btn-primary btn-lg"
         href="https://github.com/MidouDev/react-redux-movie-card"
         role="button"
       >

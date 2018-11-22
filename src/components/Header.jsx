@@ -5,11 +5,11 @@ import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light alert-dark">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="/">
         <div className="row ml-2 mr-3">
-          <i className="fas fa-video fa-2x my-auto" />
-          <div className="h4 text-dark ml-2 my-auto">MovieCards</div>
+          <i className="fas fa-video fa-2x my-auto text-white" />
+          <div className="h4 text-white ml-2 my-auto">MovieCards</div>
         </div>
       </a>
       <button
