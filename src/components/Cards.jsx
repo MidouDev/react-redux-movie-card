@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Cards.css";
+import { NavLink } from "react-router-dom";
 
 export const Cards = ({ movieList }) =>
   movieList.map(movie => (
@@ -24,9 +25,12 @@ export const Cards = ({ movieList }) =>
         </h6>
 
         <div className="card-footer">
-          <a href="#" className="btn btn-primary btn-block">
+          <NavLink
+            to={{ pathname: "/description", state: { movie: movie } }}
+            className="btn btn-primary btn-block"
+          >
             Movie description
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
