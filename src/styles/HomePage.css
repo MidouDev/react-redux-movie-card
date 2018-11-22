@@ -2,3 +2,18 @@
   background-color: #2a324b;
   border: none;
 }
+
+/*Mobile CSS*/
+@media (max-width: 550px) {
+  #home-descr {
+    font-size: 1.1rem;
+  }
+
+  #home-title {
+    font-size: 1.5rem;
+  }
+
+  .home-text {
+    font-size: 0.9rem;
+  }
+}

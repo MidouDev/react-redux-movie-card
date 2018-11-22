@@ -1,12 +1,28 @@
-#descr > .list-group-item {
+#descr-list > .list-group-item {
   background: #f1f2eb;
 }
 
-#descr > .list-group-item > span {
+#descr-list > .list-group-item > span {
   font-weight: bold;
 }
 
 .movie-image {
   border: 0.1rem solid grey;
   border-radius: 2%;
+  max-width: 100%;
+}
+
+/*Mobile CSS*/
+@media (max-width: 550px) {
+  #movie-descr {
+    font-size: 1rem;
+  }
+
+  #movie-title {
+    font-size: 1.5rem;
+  }
+
+  #descr-list > .list-group-item {
+    font-size: 1rem;
+  }
 }

@@ -13,11 +13,15 @@ export const MovieDescription = props => {
           alt={movie.title}
         />
       </div>
-      <h1 className="display-5 text-center">{movie.title}</h1>
+      <h1 className="display-5 text-center" id="movie-title">
+        {movie.title}
+      </h1>
       <hr className="my-4" />
-      <p className="lead text-justify">{movie.overview}</p>
+      <p className="lead text-justify" id="movie-descr">
+        {movie.overview}
+      </p>
       <div>
-        <ul className="list-group list-group-flush" id="descr">
+        <ul className="list-group list-group-flush" id="descr-list">
           <li className="list-group-item">
             <span>Release date : </span>
             {movie.release_date}
@@ -36,7 +40,7 @@ export const MovieDescription = props => {
           </li>
         </ul>
       </div>
-      <p className="text-danger text-center font-weight-bold">
+      <p className="text-danger text-center font-weight-bold mt-2">
         Actors and producers data will be available soon ...
       </p>
     </div>
