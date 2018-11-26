@@ -13,7 +13,7 @@ const Header = () => {
         </div>
       </a>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler bg-light"
         type="button"
         data-toggle="collapse"
         data-target="#menu"
